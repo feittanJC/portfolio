@@ -32,10 +32,10 @@ export default function Habilidades() {
   ];
 
   const backEndData = [
-    { nombre: 'Node JS', img:[nodeImage] },
+    { nombre: 'NodeJS ', img:[nodeImage] },
     { nombre: 'C#', img:[cImage] },
     { nombre: 'Python', img:[pythonImage] },
-    { nombre: 'Jave', img:[javaImage] },
+    { nombre: 'Java', img:[javaImage] },
     { nombre: '.NET Core', img:[netImage] },
     { nombre: 'SQL Server', img:[sqlImage] },
   ];

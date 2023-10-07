@@ -49,7 +49,7 @@ export default function Habilidades() {
   ];
 
   return (
-    <div id='habilidades' className='h-screen bg-[#209cee] py-32 lg:px-24'>
+    <div id='habilidades' className='2xl:h-screen bg-[#209cee] py-32 lg:px-24'>
        <h1 className='text-white text-4xl'>Habilidades</h1>
 
         <HabilidadesItem data={frontEndData} titulo={"FrontEnd"}/>

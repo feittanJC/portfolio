@@ -8,7 +8,7 @@ export default function SocialMediaGroup() {
   const data = [
     { "url": "https://www.linkedin.com/in/josuecastillomurrieta/", "img": [linkdnImage],"color":"blue"},
     { "url": "https://www.instagram.com/feittanj/", "img": [instagramImage],"color":"pink" },
-    { "url": "https://github.com/feittanJC", "img": [githubImage] },
+    { "url": "https://github.com/feittanJC", "img": [githubImage],"color":"gray" },
 
   ]
 
@@ -16,7 +16,7 @@ export default function SocialMediaGroup() {
     <section className='flex flex-wrap justify-between'>
 
       {data.map((data, index) => (
-        <SocialMediaItem img={data.img} url={data.url} key={index}/>
+        <SocialMediaItem img={data.img} url={data.url} color={data.color} key={index}/>
       ))}
 
 

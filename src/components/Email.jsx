@@ -15,7 +15,7 @@ export default function Email() {
     <div className="mx-auto  flex w-[90%] items-center justify-center">
       <div className="h-auto w-full rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
         <div className="flex py-16 flex-col h-full w-full items-center justify-center bg-gray-800 back text-white ">
-          <h1 className='text-2xl pb-12'>Contacta conmigo</h1>
+          <h1 className=' text-center text-2xl pb-12'>Contacta conmigo</h1>
           <form ref={form} onSubmit={handleForm} className='w-[75%] flex flex-col text-center py-5'>
 
             <div className="flex flex-col pb-2">

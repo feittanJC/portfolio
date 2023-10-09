@@ -18,6 +18,7 @@ import viteImage from '../assets/tecnologias/vite.svg';
 import firebaseImage from '../assets/tecnologias/firebase.png';
 import vercelImage from '../assets/tecnologias/vercel.png';
 import awsImage from '../assets/tecnologias/aws.png'
+import { motion } from "framer-motion"
 
 export default function Habilidades() {
 
@@ -49,12 +50,20 @@ export default function Habilidades() {
   ];
 
   return (
-    <div id='habilidades' className='2xl:h-screen bg-[#209cee] py-32 lg:px-24'>
-       <h1 className='text-white text-4xl'>Habilidades</h1>
+    <div id='habilidades' className='2xl:h-screen bg-[#209cee] px-4 py-32 lg:px-24'>
+       <h1 className='text-white text-2xl md:text-4xl'>Habilidades</h1>
 
+        <motion.div initial={{x:-300 }} whileInView={{x:0}} transition={{duration:0.5}} viewport={{ once: true }}>
         <HabilidadesItem data={frontEndData} titulo={"FrontEnd"}/>
-        <HabilidadesItem data={backEndData} titulo={"BackEnd"}/>
-        <HabilidadesItem data={otherData} titulo={"Otros"}/>
+        </motion.div>
+        <motion.div initial={{x:-300,opacity:0 }}  whileInView={{x:0,opacity:1}} transition={{duration:0.5, delay:0.5}} viewport={{ once: true }} className="">
+          <HabilidadesItem data={backEndData} titulo={"BackEnd"}/>
+        </motion.div>
+        <motion.div initial={{x:-300,opacity:0 }}  whileInView={{x:0,opacity:1}} transition={{duration:0.5, delay:1}} viewport={{ once: true }} className="">
+          <HabilidadesItem data={otherData} titulo={"Otros"}/>
+        </motion.div>
+        
+       
 
     </div>
   )
